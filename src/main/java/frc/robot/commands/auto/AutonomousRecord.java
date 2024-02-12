@@ -1,6 +1,6 @@
 package frc.robot.commands.auto;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.lib.control.Deadzone;
 import frc.robot.Robot;
 import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
@@ -12,7 +12,7 @@ import java.time.Instant;
 /**
  * Record autonomous.
  */
-public class AutonomousRecord extends CommandBase {
+public class AutonomousRecord extends Command {
     private String m_filename = "";
     private FileOutputStream m_fout;
 

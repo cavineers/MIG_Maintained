@@ -5,14 +5,14 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.subsystems.Intake.IntakeMotorState;
 
 /**
  * Reverse intake for desired time.
  */
-public class TimedReverseIntake extends CommandBase {
+public class TimedReverseIntake extends Command {
     private double m_start;
     private double m_time;
 

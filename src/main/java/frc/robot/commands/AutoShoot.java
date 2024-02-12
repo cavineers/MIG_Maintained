@@ -1,9 +1,9 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj.controller.PIDController;
+import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.lib.ShooterUtil;
 import frc.robot.Constants;
 import frc.robot.Robot;
@@ -14,7 +14,7 @@ import frc.robot.subsystems.Transportation;
 /**
  * Automatically shoot.
  */
-public class AutoShoot extends CommandBase {
+public class AutoShoot extends Command {
     // PIDs
     private PIDController m_adjustmentPid = new PIDController(Constants.Shooter.kAdjustPIDp, Constants.Shooter.kAdjustPIDi, Constants.Shooter.kAdjustPIDd);
     private PIDController m_rotatePid = new PIDController(Constants.Shooter.kAnglePIDp, Constants.Shooter.kAnglePIDi, Constants.Shooter.kAnglePIDd);

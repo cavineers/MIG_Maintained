@@ -1,6 +1,6 @@
 package frc.lib.control;
 
-import edu.wpi.first.wpilibj.util.Units;
+import edu.wpi.first.math.util.Units;
 
 /**
  * Deadzone utils.

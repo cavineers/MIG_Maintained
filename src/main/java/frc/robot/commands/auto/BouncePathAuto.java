@@ -1,6 +1,6 @@
 package frc.robot.commands.auto;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.paths.BouncePath;
 import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
@@ -8,7 +8,7 @@ import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
 /**
  * Bounce path autonomous command.
  */
-public class BouncePathAuto extends CommandBase {
+public class BouncePathAuto extends Command {
     public BouncePathAuto() {
         this.addRequirements(Robot.swerveDrive);
     }

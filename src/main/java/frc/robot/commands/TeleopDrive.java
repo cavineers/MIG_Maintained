@@ -1,6 +1,6 @@
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.lib.control.ControllerDriveInput;
 import frc.lib.control.Deadzone;
 import frc.robot.Robot;
@@ -9,7 +9,7 @@ import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
 /**
  * Teleop Drive command.
  */
-public class TeleopDrive extends CommandBase {
+public class TeleopDrive extends Command {
     private boolean m_finished = false;
 
     public TeleopDrive() {

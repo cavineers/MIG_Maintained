@@ -1,7 +1,7 @@
 package frc.robot.commands;
 
 // import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.subsystems.Shooter.ShooterMode;
 import frc.robot.subsystems.Transportation.TransportMotorState;
@@ -9,7 +9,7 @@ import frc.robot.subsystems.Transportation.TransportMotorState;
 /**
  * Turns on shooting systems and conveyors.
  */
-public class ManualShoot extends CommandBase {
+public class ManualShoot extends Command {
     // private double m_timestamp;
 
     public ManualShoot() {}

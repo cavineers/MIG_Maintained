@@ -1,14 +1,14 @@
 package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.Timer;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.subsystems.Intake;
 
 /**
  * Temp javadoc.
  */
-public class DropIntake extends CommandBase {
+public class DropIntake extends Command {
     private double m_startTime;
 
     public DropIntake() {

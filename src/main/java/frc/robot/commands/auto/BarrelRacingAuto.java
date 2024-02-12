@@ -1,6 +1,6 @@
 package frc.robot.commands.auto;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.paths.BarrelRacingPath;
 import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
@@ -8,7 +8,7 @@ import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
 /**
  * Barrel Racing autonomous command.
  */
-public class BarrelRacingAuto extends CommandBase {
+public class BarrelRacingAuto extends Command {
     public BarrelRacingAuto() {
         this.addRequirements(Robot.swerveDrive);
     }

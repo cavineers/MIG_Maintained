@@ -1,8 +1,8 @@
 package frc.robot.commands.auto;
 
-import edu.wpi.first.wpilibj.controller.PIDController;
+import edu.wpi.first.math.controller.PIDController;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.lib.Target;
 import frc.robot.Constants;
 import frc.robot.Robot;
@@ -13,7 +13,7 @@ import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
  * Galactic Search autonomous command.
  * Note: Tolerance for Vision calcs is +- 2 inches
  */
-public class GalacticSearch extends CommandBase {
+public class GalacticSearch extends Command {
     // Finished
     private boolean m_finished = false;
 

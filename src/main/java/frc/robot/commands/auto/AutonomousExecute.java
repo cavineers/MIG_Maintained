@@ -1,7 +1,7 @@
 package frc.robot.commands.auto;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.subsystems.SwerveDrive.SwerveDriveState;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
  * Execute autonomous code.
  */
-public class AutonomousExecute extends CommandBase {
+public class AutonomousExecute extends Command {
     private String m_filename = "";
     private Scanner m_data;
     private boolean m_finished = false;

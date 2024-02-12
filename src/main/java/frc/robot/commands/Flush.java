@@ -1,6 +1,6 @@
 package frc.robot.commands;
 
-import edu.wpi.first.wpilibj2.command.CommandBase;
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.Robot;
 import frc.robot.subsystems.Intake.IntakeMotorState;
 import frc.robot.subsystems.Transportation.TransportMotorState;
@@ -8,7 +8,7 @@ import frc.robot.subsystems.Transportation.TransportMotorState;
 /**
  * Flush the robot class.
  */
-public class Flush extends CommandBase {
+public class Flush extends Command {
 
     // Constructor
     public Flush() {

@@ -1,32 +1,29 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic",
-    "java.server.launchMode": "Standard",
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "bin/": true,
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true,
-        "**/*~": true
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.server.launchMode": "Standard",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "bin/": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/*~": true
+  },
+  "java.test.config": [
+    {
+      "name": "WPIlibUnitTests",
+      "workingDirectory": "${workspaceFolder}/build/jni/release",
+      "vmargs": [ "-Djava.library.path=${workspaceFolder}/build/jni/release" ],
+      "env": {
+        "LD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release" ,
+        "DYLD_LIBRARY_PATH": "${workspaceFolder}/build/jni/release"
+      }
     },
-    "cSpell.words": [
-        "AHRS",
-        "CANPID",
-        "Gson",
-        "Odometry",
-        "PIDs",
-        "accl",
-        "fout",
-        "lvuser",
-        "setpoint",
-        "whitesmoke",
-        "xyxy"
-    ],
-    "java.checkstyle.configuration": "${workspaceFolder}\\checkstyle.xml",
-    "java.checkstyle.version": "8.41",
+  ],
+  "java.test.defaultConfig": "WPIlibUnitTests"
 }

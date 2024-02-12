@@ -1,20 +1,28 @@
-name: Gradle
+name: FRC Java CI with Gradle
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+permissions:
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v1
-      - name: Setup java
-        uses: actions/setup-java@v1
-        with:
-          java-version: 11
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
-      - name: Execute build
-        run: ./gradlew build
-      - name: Complete
-        run: echo Done
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    - name: Build with Gradle
+      uses: gradle/gradle-build-action@v2.6.0
+      with:
+        arguments: build
+    - name: Run unit tests
+      run: ./gradlew test
